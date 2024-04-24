@@ -9,7 +9,7 @@ exports.showHome = (req, res) => {
     res.render("index");
 };
 exports.showCourses = (req, res) => {
-    res.render("courses");
+    res.render("transportation");
 };
 
 exports.showSignUp = (req, res) => {
@@ -45,7 +45,7 @@ var courses = [
 ];
 
 exports.showCourses = (req,res) => {
-    res.render("courses", {
-        offeredCourses
+    res.render("transportation", {
+        courses
     });
 };

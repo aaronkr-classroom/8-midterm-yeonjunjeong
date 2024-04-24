@@ -34,7 +34,7 @@ app.use(express.json());
  * 각 페이지 및 요청 타입을 위한 라우트 추가
  */
 app.get('/', homeController.showHome);
-app.get('/courses', homeController.showCourses); // 코스 페이지 위한 라우트 추가
+app.get('/transportation', homeController.showCourses); // 코스 페이지 위한 라우트 추가
 app.get('/contact', homeController.showSignUp); // 연락처 페이지 위한 라우트 추가
 //app.post('/contact', homeController.postedSignUp); // 연락처 제출 양식을 위한 라우트 추가
 app.get('/thanks',homeController.postedContactForm);//thanks 페이지
